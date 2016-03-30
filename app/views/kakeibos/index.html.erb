@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Kakeibos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Incomeitem</th>
+      <th>Incomeprice</th>
+      <th>Outcomeitem</th>
+      <th>Outcomeprice</th>
+      <th>Summary</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kakeibos.each do |kakeibo| %>
+      <tr>
+        <td><%= kakeibo.incomeitem %></td>
+        <td><%= kakeibo.incomeprice %></td>
+        <td><%= kakeibo.outcomeitem %></td>
+        <td><%= kakeibo.outcomeprice %></td>
+        <td><%= kakeibo.summary %></td>
+        <td><%= link_to 'Show', kakeibo %></td>
+        <td><%= link_to 'Edit', edit_kakeibo_path(kakeibo) %></td>
+        <td><%= link_to 'Destroy', kakeibo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kakeibo', new_kakeibo_path %>

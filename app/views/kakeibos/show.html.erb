@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Incomeitem:</strong>
+  <%= @kakeibo.incomeitem %>
+</p>
+
+<p>
+  <strong>Incomeprice:</strong>
+  <%= @kakeibo.incomeprice %>
+</p>
+
+<p>
+  <strong>Outcomeitem:</strong>
+  <%= @kakeibo.outcomeitem %>
+</p>
+
+<p>
+  <strong>Outcomeprice:</strong>
+  <%= @kakeibo.outcomeprice %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @kakeibo.summary %>
+</p>
+
+<%= link_to 'Edit', edit_kakeibo_path(@kakeibo) %> |
+<%= link_to 'Back', kakeibos_path %>

@@ -1,0 +1,37 @@
+<%= form_for(@kakeibo) do |f| %>
+  <% if @kakeibo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kakeibo.errors.count, "error") %> prohibited this kakeibo from being saved:</h2>
+
+      <ul>
+      <% @kakeibo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :incomeitem %><br>
+    <%= f.text_field :incomeitem %>
+  </div>
+  <div class="field">
+    <%= f.label :incomeprice %><br>
+    <%= f.number_field :incomeprice %>
+  </div>
+  <div class="field">
+    <%= f.label :outcomeitem %><br>
+    <%= f.text_field :outcomeitem %>
+  </div>
+  <div class="field">
+    <%= f.label :outcomeprice %><br>
+    <%= f.number_field :outcomeprice %>
+  </div>
+  <div class="field">
+    <%= f.label :summary %><br>
+    <%= f.text_field :summary %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

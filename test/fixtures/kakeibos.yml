@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  incomeitem: MyString
+  incomeprice: 1
+  outcomeitem: MyString
+  outcomeprice: 1
+  summary: MyString
+
+two:
+  incomeitem: MyString
+  incomeprice: 1
+  outcomeitem: MyString
+  outcomeprice: 1
+  summary: MyString
